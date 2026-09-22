@@ -38,3 +38,17 @@ class Vendor:
             self.inventory.append(their_item)
             return True 
         return False
+
+
+# wave 4
+
+    def swap_first_item (self, other_vendor):
+        if  self.inventory and  other_vendor.inventory:
+                    my_item = self.inventory.pop(0)
+                    their_item = other_vendor.inventory.pop(0)
+
+                    self.inventory.insert(0,their_item)
+                    other_vendor.inventory.insert(0,my_item)
+        
+                    return True 
+        return False
