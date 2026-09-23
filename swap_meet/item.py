@@ -1,4 +1,3 @@
-#wave 2
 import uuid
 class Item:
     def __init__(self,id=None, condition=0): 
@@ -10,12 +9,12 @@ class Item:
 
     def get_category (self):
         return self.__class__.__name__
- #wave 3
+ 
 
     def __str__(self):
         return f"An object of type Item with id {self.id}."
 
-# wave 5
+
     def condition_description(self):
         if self.condition == 5:
             return "mint"
