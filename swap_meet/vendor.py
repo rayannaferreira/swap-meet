@@ -5,12 +5,10 @@ class Vendor:
         else:    
             self.inventory = inventory
 
-
     def add(self, item):
         self.inventory.append(item)
         return item 
     
-
     def remove(self, item):
         if item in self.inventory:
             self.inventory.remove(item)
@@ -18,19 +16,14 @@ class Vendor:
 
         return False
 
-
-# wave 2 
-    def get_by_id (self, id):
+    def get_by_id(self, id):
         for  item in self.inventory:
             if item.id == id:
                 return item
         return None   
 
-    
-#wave 3  
-
     def swap_items(self,other_vendor,my_item,their_item):
-        if my_item  in self.inventory and their_item in other_vendor.inventory:
+        if my_item in self.inventory and their_item in other_vendor.inventory:
             self.inventory.remove(my_item)
             other_vendor.inventory.append(my_item)
 
@@ -39,10 +32,7 @@ class Vendor:
             return True 
         return False
 
-
-# wave 4
-
-    def swap_first_item (self, other_vendor):
+    def swap_first_item(self, other_vendor):
         if  self.inventory and  other_vendor.inventory:
                     my_item = self.inventory.pop(0)
                     their_item = other_vendor.inventory.pop(0)
@@ -52,3 +42,11 @@ class Vendor:
         
                     return True 
         return False
+
+    # wave 6 
+    def get_by_category(self, category):
+        matching_items = []
+        for item in self.inventory:
+            if item.category == category:
+                matching_items.append(item)
+        return matching_items
