@@ -8,7 +8,7 @@ class Item:
 
 
     def get_category (self):
-        return self.__class__.__name__
+        return "Item"
  
 
     def __str__(self):
