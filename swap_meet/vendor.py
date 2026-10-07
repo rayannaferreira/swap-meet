@@ -2,13 +2,13 @@ class Vendor:
     def __init__(self, inventory=None):
         if inventory is None:
             self.inventory = []
-        else:    
+        else:
             self.inventory = inventory
 
 
     def add(self, item):
         self.inventory.append(item)
-        return item 
+        return item
 
     
     def remove(self, item):
@@ -20,7 +20,7 @@ class Vendor:
 
 
     def get_by_id(self, id):
-        for  item in self.inventory:
+        for item in self.inventory:
             if item.id == id:
                 return item
             
@@ -69,7 +69,7 @@ class Vendor:
 
         return best_item
 
-        
+
     def swap_best_by_category(self, other_vendor, my_priority, their_priority):
         my_item = self.get_best_by_category(their_priority)
         their_item = other_vendor.get_best_by_category(my_priority)

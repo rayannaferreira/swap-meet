@@ -24,7 +24,11 @@ We are both open to feedback. At the end of each Wave, we will review the work t
 We want to improve our communication by keeping each other updated about our progress and clearly explaining any changes we make to the project.
 
 ## Optional: Other agreements
-We will use slack as our main communication tool.  We will keep a written record of our progress in our slack group or conversation, including updates about changes made to the project.  We will practice presenting and explaining our code together so that both partners understand the complete project and are prepared for the presentation.
+We will use slack as our main communication tool.
+
+We will keep a written record of our progress in our slack group or conversation, including updates about changes made to the project.
+
+We will practice presenting and explaining our code together so that both partners understand the complete project and are prepared for the presentation.
 
 ## Signatures
 Rayanna Ferreira, Rayne Pothong
